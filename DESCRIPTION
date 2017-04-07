@@ -1,0 +1,16 @@
+Package: lakemodeltools
+Type: Package
+Title: Tools based on the lake modeling literature
+Version: 0.2.4
+Author: Luke Winslow
+Maintainer: Luke Winslow <lawinslow@gmail.com>
+Description: Collection of tools based on the scientific literature around lake
+    modeling.
+Imports:
+    data.table,
+    lubridate,
+    fasttime
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
