@@ -52,8 +52,11 @@ nldas_to_glm_drivers = function(driver_df){
   }else if('precip' %in% names(driver_df)){
     #convert from mm/day to m/day
     driver_df$Rain      = driver_df$precip/1000
+  }else if('pr' %in% names(driver_df)){
+    #convert from kg/m^2/sec
+    driver_df$Rain      = driver_df$pr * (60*60*24)/1e3  #convert to m/day rate
   }else{
-    stop('Unable to find precipitation data. \nMust be either apcpsfc or precip')
+    stop('Unable to find precipitation data. \nMust be either apcpsfc, precip, or pr')
   }
 
 

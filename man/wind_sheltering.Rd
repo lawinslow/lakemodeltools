@@ -28,4 +28,3 @@ CD Markfort, Perez AL, Thill JW, Jaster DA, Porté-Agel F, Stefan HG,
 
 M Hondzo, Stefan HG, 1993. Lake water temperature simulation model. J. Hydraulic Eng. 119, 1251–1273
 }
-

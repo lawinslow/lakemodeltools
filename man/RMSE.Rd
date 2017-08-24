@@ -14,4 +14,3 @@ ignored.}
 \description{
 Root Mean Squared error of supplied values. NA values will be removed
 }
-

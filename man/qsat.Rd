@@ -16,4 +16,3 @@ Returns saturation specific humidity [kg/kg] given
  the air temperature and pressure. Useful in convering
  specific humitity to relative humidity
 }
-

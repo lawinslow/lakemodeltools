@@ -14,4 +14,3 @@ ignored.}
 \description{
 Mean overall bias in supplied values. NA values will be removed
 }
-

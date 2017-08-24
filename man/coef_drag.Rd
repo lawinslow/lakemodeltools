@@ -20,4 +20,3 @@ Get coefficient of wind drag for a lake with a supplied wind sheltering coeffici
 \details{
 TODO
 }
-

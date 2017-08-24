@@ -6,6 +6,7 @@
 #'
 #' @import fasttime
 #' @import data.table
+#' @importFrom zoo rollapply
 #'
 #' @export
 driver_aggregate = function(glm_drivers, avg.window=1){

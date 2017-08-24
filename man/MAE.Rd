@@ -15,4 +15,3 @@ ignored.}
 Mean of the absolute value error for all supplied values.
 NA values will be removed
 }
-

@@ -11,4 +11,3 @@ driver_aggregate(glm_drivers, avg.window = 1)
 
 \item{avg.window}{Rolling window to apply first, in days.}
 }
-

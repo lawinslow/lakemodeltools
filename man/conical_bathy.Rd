@@ -17,4 +17,3 @@ on lake area and max observed depth. Useful
 in situations where true hypsometry or
 bathymetry is unknown.
 }
-
