@@ -4,5 +4,8 @@
 \alias{nldas_to_glm_drivers}
 \title{Convert NLDAS to GLM drivers}
 \usage{
-nldas_to_glm_drivers(driver_df)
+nldas_to_glm_drivers(driver_df, drop.precip = TRUE)
+}
+\arguments{
+\item{drop.precip}{Set precip to zero temp is below freezing (and precip is converted to snow)}
 }

@@ -1,7 +1,7 @@
 Package: lakemodeltools
 Type: Package
 Title: Tools based on the lake modeling literature
-Version: 0.2.5
+Version: 0.3.5
 Author: Luke Winslow
 Maintainer: Luke Winslow <lawinslow@gmail.com>
 Description: Collection of tools based on the scientific literature around lake

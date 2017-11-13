@@ -1,9 +1,10 @@
 #' @title Convert NLDAS to GLM drivers
 #'
+#' @param drop.precip Set precip to zero temp is below freezing (and precip is converted to snow)
 #'
 #'
 #' @export
-nldas_to_glm_drivers = function(driver_df){
+nldas_to_glm_drivers = function(driver_df, drop.precip=TRUE){
 
   #fix up the col names, differ a little depending on source
   if(any(grepl('_110_SFC', names(driver_df), ignore.case = TRUE))){
@@ -65,7 +66,10 @@ nldas_to_glm_drivers = function(driver_df){
 
   # 10:1 ratio assuming 1:10 density ratio water weight
   driver_df$Snow[driver_df$AirTemp < 0] = driver_df$Rain[driver_df$AirTemp < 0]*10
-  driver_df$Rain[driver_df$AirTemp < 0] = 0
+
+  if(drop.precip){
+    driver_df$Rain[driver_df$AirTemp < 0] = 0
+  }
 
 
   #convert DateTime to properly formatted string
