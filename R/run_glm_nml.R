@@ -47,5 +47,5 @@ run_glm_nml = function(nml, drivers, dest){
   #going to guess at this
   ncfile = file.path(dest, 'output.nc')
 
-  return(data.frame(dest, nmlfile, ncfile))
+  return(data.frame(dest, nmlfile, ncfile, stringsAsFactors = FALSE))
 }
